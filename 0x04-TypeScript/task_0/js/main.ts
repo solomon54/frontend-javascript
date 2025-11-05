@@ -24,13 +24,7 @@ const student2: Student = {
 // 2. Create an array named studentsList containing the two variables
 const studentsList: Student[] = [student1, student2];
 
-// 3. Using Vanilla Javascript, render a table
-// 4. For each element, append a new row containing first name and location
-
-/**
- * Renders an HTML table of students to the body of the document.
- * @param students The array of students to render.
- */
+// 3. Render a table in the DOM
 const renderTable = (students: Student[]): void => {
   // 1. Create the table element
   const table: HTMLTableElement = document.createElement("table");
