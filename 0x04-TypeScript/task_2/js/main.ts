@@ -63,7 +63,7 @@ console.log(emp3.workFromHome()); // Working from home
 
 /* Function to check if employee is Director
  Type predicate function */
-function isDirector(employee: Director | Teacher): employee is Director {
+export function isDirector(employee: Director | Teacher): employee is Director {
   return employee instanceof Director;
 }
 

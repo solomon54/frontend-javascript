@@ -41,7 +41,7 @@ const emp3 = createEmployee("$500");
 console.log(emp3.workFromHome()); // Working from home
 /* Function to check if employee is Director
  Type predicate function */
-function isDirector(employee) {
+export function isDirector(employee) {
     return employee instanceof Director;
 }
 // Function that executes the right work method
@@ -56,5 +56,4 @@ function executeWork(employee) {
 // Example usage
 console.log(executeWork(createEmployee(200))); // Getting to work
 console.log(executeWork(createEmployee(1000))); // Getting to director tasks
-export {};
 //# sourceMappingURL=main.js.map
