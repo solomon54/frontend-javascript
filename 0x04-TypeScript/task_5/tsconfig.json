@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "system",
+        "outFile": "build.js",
+        "strict": true
+    },
+    "include": [
+        "js/**/*.ts"
+    ]
+}
