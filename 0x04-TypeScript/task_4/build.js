@@ -26,10 +26,8 @@ var Subjects;
     }());
     Subjects.Subject = Subject;
 })(Subjects || (Subjects = {}));
-/// <reference path="./Teacher.ts" />
 /// <reference path="./Subject.ts" />
 var Subjects;
-/// <reference path="./Teacher.ts" />
 /// <reference path="./Subject.ts" />
 (function (Subjects) {
     var Cpp = /** @class */ (function (_super) {
@@ -38,22 +36,19 @@ var Subjects;
             return _super !== null && _super.apply(this, arguments) || this;
         }
         Cpp.prototype.getRequirements = function () {
-            return 'Here is the list of requirements for Cpp';
+            return "Here is the list of requirements for Cpp";
         };
         Cpp.prototype.getAvailableTeacher = function () {
-            if (!this.teacher.experienceTeachingC)
-                return 'No available teacher';
+            if (!this.teacher.experienceTeachingC) {
+                return "No available teacher";
+            }
             return "Available Teacher: ".concat(this.teacher.firstName);
         };
         return Cpp;
     }(Subjects.Subject));
     Subjects.Cpp = Cpp;
 })(Subjects || (Subjects = {}));
-/// <reference path="./Teacher.ts" />
-/// <reference path="./Subject.ts" />
 var Subjects;
-/// <reference path="./Teacher.ts" />
-/// <reference path="./Subject.ts" />
 (function (Subjects) {
     var Java = /** @class */ (function (_super) {
         __extends(Java, _super);
@@ -61,22 +56,18 @@ var Subjects;
             return _super !== null && _super.apply(this, arguments) || this;
         }
         Java.prototype.getRequirements = function () {
-            return 'Here is the list of requirements for Java';
+            return "Here is the list of requirements for Java";
         };
         Java.prototype.getAvailableTeacher = function () {
             if (!this.teacher.experienceTeachingJava)
-                return 'No available teacher';
+                return "No available teacher";
             return "Available Teacher: ".concat(this.teacher.firstName);
         };
         return Java;
     }(Subjects.Subject));
     Subjects.Java = Java;
 })(Subjects || (Subjects = {}));
-/// <reference path="./Teacher.ts" />
-/// <reference path="./Subject.ts" />
 var Subjects;
-/// <reference path="./Teacher.ts" />
-/// <reference path="./Subject.ts" />
 (function (Subjects) {
     var React = /** @class */ (function (_super) {
         __extends(React, _super);
@@ -84,11 +75,11 @@ var Subjects;
             return _super !== null && _super.apply(this, arguments) || this;
         }
         React.prototype.getRequirements = function () {
-            return 'Here is the list of requirements for React';
+            return "Here is the list of requirements for React";
         };
         React.prototype.getAvailableTeacher = function () {
             if (!this.teacher.experienceTeachingReact)
-                return 'No available teacher';
+                return "No available teacher";
             return "Available Teacher: ".concat(this.teacher.firstName);
         };
         return React;
